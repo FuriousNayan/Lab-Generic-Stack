@@ -54,12 +54,12 @@ public class TestGenericStack {
 
         // Test with empty stack
         GenericStack<String> emptyStack = new GenericStack<>();
+        System.out.print("\n"+ "Pop with emptyStack: ");
         try{
             System.out.println("Pop with emptyStack: " + emptyStack.pop());
         } catch(Exception ArrayIndexOutOfBoundsException){
             System.out.println("Index Out of Bounds Error Occured!");
         }
-
 
     }
 }

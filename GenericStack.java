@@ -35,7 +35,11 @@ public class GenericStack<E> {
      * Return type is E.
      */
     public E peek() {
+        if(list.isEmpty()){
+            throw new IllegalArgumentException("Cannot have an empty list");
+        }
         return list.get(list.size() - 1);
+
     }
     
     /**
